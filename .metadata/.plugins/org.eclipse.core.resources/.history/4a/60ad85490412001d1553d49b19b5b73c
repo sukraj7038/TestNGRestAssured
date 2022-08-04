@@ -1,0 +1,30 @@
+package testscript;
+
+import io.restassured.RestAssured;
+import io.restassured.response.Response;
+
+public class GoogleAPITesting {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		
+	}
+
+	public static void googleGetCall()
+	{
+		
+		RestAssured.baseURI = "https://google.com";
+		
+		Response res = RestAssured.get();
+		
+		int responsecode = res.getStatusCode();
+		
+		System.out.println(responsecode);
+		
+	}
+	
+	
+	
+}
